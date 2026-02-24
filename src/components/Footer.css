@@ -1,0 +1,158 @@
+/* =========================================
+   Footer - Clean, Professional, Responsive
+   Healthcare / Medical Theme - 2025/2026 style
+========================================= */
+
+.footer {
+  background-color: #0f172a;       /* deep navy - trust & calm */
+  color: #e2e8f0;                  /* light gray text */
+  padding: 5rem 2rem 2rem;
+  font-family: 'Segoe UI', system-ui, sans-serif;
+}
+
+.footer__container {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  gap: 3rem 2rem;
+}
+
+.footer__brand {
+  display: flex;
+  flex-direction: column;
+  gap: 1.2rem;
+}
+
+.footer__logo {
+  width: 160px;
+  height: auto;
+  filter: brightness(1.1); /* slight pop on dark bg */
+}
+
+.footer__tagline {
+  font-size: 0.95rem;
+  opacity: 0.8;
+  margin: 0;
+  max-width: 280px;
+}
+
+.footer__section h4.footer__heading {
+  font-size: 1.25rem;
+  font-weight: 600;
+  color: #60a5fa;                /* bright blue accent */
+  margin-bottom: 1.5rem;
+  letter-spacing: 0.5px;
+}
+
+.footer__list,
+.footer__contact {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 0.9rem;
+}
+
+.footer__list a,
+.footer__contact span {
+  color: #cbd5e1;
+  text-decoration: none;
+  transition: color 0.25s ease, transform 0.2s ease;
+}
+
+.footer__list a:hover,
+.footer__contact span:hover {
+  color: #93c5fd;
+  transform: translateX(4px);
+}
+
+.footer__icon {
+  margin-right: 0.9rem;
+  color: #60a5fa;
+  font-size: 1.15rem;
+  vertical-align: middle;
+}
+
+.footer__hours {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  font-size: 0.95rem;
+}
+
+.footer__hours-item {
+  display: flex;
+  justify-content: space-between;
+  padding: 0.4rem 0;
+  border-bottom: 1px solid #334155;
+}
+
+.footer__hours-item:last-child {
+  border-bottom: none;
+}
+
+.day {
+  font-weight: 500;
+  color: #f1f5f9;
+}
+
+.time {
+  color: #94a3b8;
+}
+
+.footer__bottom {
+  text-align: center;
+  margin-top: 4rem;
+  padding-top: 2rem;
+  border-top: 1px solid #334155;
+  font-size: 0.9rem;
+  opacity: 0.75;
+}
+
+/* ── Responsive ── */
+@media (max-width: 768px) {
+  .footer {
+    padding: 4rem 1.5rem 2rem;
+  }
+
+  .footer__brand {
+    text-align: center;
+  }
+
+  .footer__logo {
+    margin: 0 auto;
+  }
+
+  .footer__tagline {
+    margin: 0 auto;
+    text-align: center;
+  }
+}
+
+@media (max-width: 480px) {
+  .footer__container {
+    gap: 2.5rem 1.5rem;
+  }
+
+  .footer__heading {
+    text-align: center;
+  }
+
+  .footer__list,
+  .footer__contact,
+  .footer__hours {
+    text-align: center;
+  }
+
+  .footer__hours-item {
+    flex-direction: column;
+    gap: 0.3rem;
+  }
+
+  .footer__icon {
+    display: block;
+    margin: 0 auto 0.4rem;
+  }
+}
